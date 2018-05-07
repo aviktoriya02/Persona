@@ -2,15 +2,11 @@
 <html>
 <head>		
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="stylesheet.css">
 	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
 	<script type="text/javascript" src="js/carousel.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/nicescroll.js"></script>
 	<title>Главная</title>
 </head>
 <body>
@@ -23,9 +19,9 @@
 				<div class="phone-number">8 (390) 229 78 41</div>
 				<a class="call-us" href="">Заказать звонок</a>
 			</div>
-			<div class="icon icon-search"></div>
+			<button class="icon icon-search"></button>
 		</div>
-		<div class="title">Persona</div>
+		<h1 class="title">Persona</h1>
 		<nav class="menu">
 			<ul>					
 				<li><a href="#new-arrival">Новые коллекции</a></li>
@@ -138,8 +134,8 @@
 				</div>
 			</div>
 		</div>
-		<a name="new-arrival"></a>
 		<div class="new-arrival">
+		<a name="new-arrival"></a>
 			<h1>Новинки</h1>
 			<div class="product__items">
 				<div class="product__block">
@@ -204,7 +200,7 @@
 						</div>
 						<div class="quantity">
 							<button class="minus"></button>
-							<input type="text" value="1" id="col-quantity">
+							<input type="text" value="1" id="num-quantity">
 							<button class="plus"></button>
 						</div>
 						<button class="add-to-cart">В корзину</button>
@@ -297,8 +293,8 @@
 			</div>
 			</div>
 		</div>
-		<a name="discounts"></a>
 		<div class="discounts">
+		<a name="discounts"></a>
 			<h1>Скидки</h1>
 			<div class="product__items">
 				<div class="product__block">
@@ -363,7 +359,7 @@
 						</div>
 						<div class="quantity">
 							<button class="minus"></button>
-							<input type="text" value="1" id="col-quantity">
+							<input type="text" value="1" id="num-quantity">
 							<button class="plus"></button>
 						</div>
 						<button class="add-to-cart">В корзину</button>
@@ -486,7 +482,7 @@
 				</button>
 			</div>
 			<p>Donec eget diam sagittis, vehicula purus nec, vulputate eros. Nulla facilisi. Suspendisse egestas bibendum cursus. Cras elementum ligula eget euismod feugiat. Nunc nec eros non diam eleifend tincidunt et a velit. Sed nisl libero, vestibulum vitae turpis id, vulputate ultrices leo. Cras et est eget lectus blandit cursus vehicula at ligula. Etiam auctor, quam ornare iaculis malesuada, tellus sem egestas felis, vitae euismod eros mi eget urna. Sed turpis sem, semper quis ligula vel, consequat hendrerit sapien. Ut pharetra mollis nulla vehicula laoreet. Ut aliquet ultrices turpis, at vehicula lorem blandit in. Donec in urna at arcu consequat imperdiet eget quis leo. Fusce at sapien efficitur, tincidunt odio sit amet, aliquam risus.</p>
-			<a class="about-company__btn" href=""><span>Оставить отзыв</span></a>
+			<a class="about-company__btn" href=""><span>Узнать больше</span></a>
 		</div>
 		<div class="insta">
 			<div class="insta__items">
@@ -518,8 +514,8 @@
 				</a>
 			</div>
 		</div>
-		<a name="contacts"></a>
 		<div class="addresses">
+		<a name="contacts"></a>
 			<ul>
 				<li>
 					<p class="addresses__name">Виктор</p>
@@ -627,7 +623,7 @@
 				<a class="information__social-inst" href="#"></a>
 			</div>
 			<div class="information__phone">
-				<img src="image/.png"/>
+				<img src="image/phone2.png"/>
 				<p>8 (913) 440-01-10</p>
 				<a class="information__phone-call" href="#">Заказать звонок</a>
 			</div>
@@ -668,3 +664,9 @@ $(function(){
     );
 });
 </script>
+
+<script> 
+	$(document).ready(function() {
+		var nice = $(".addresses ul").niceScroll(); 
+	}); 
+</script> 
