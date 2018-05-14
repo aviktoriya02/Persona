@@ -2,133 +2,169 @@
 <html>
 <head>		
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="stylesheet.css">
 	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
+	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/carousel.js"></script>
+	<script type="text/javascript" src="js/carousel_banner.js"></script>
+	<script type="text/javascript" src="js/carousel_viewed-items.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 	<script type="text/javascript" src="js/nicescroll.js"></script>
 	<title>Главная</title>
 </head>
 <body>
 	<header class="header">
-		<div class="header-top">
-			<div class="address">г.Абакан,ул.Дружбы народов,40</div>
-			<a class="address-on-map" href="#map">Посмотреть на карте</a>
-			<div class="phone">
-				<div class="icon icon-phone"></div>
-				<div class="phone-number">8 (390) 229 78 41</div>
-				<a class="call-us" href="">Заказать звонок</a>
-			</div>
-			<button class="icon icon-search"></button>
+		<div class="address">
+			<div class="address__text">г.Абакан,ул.Дружбы народов,40</div>
+			<a class="address__link" href="#map">Посмотреть на карте</a>
 		</div>
-		<h1 class="title">Persona</h1>
-		<nav class="menu">
-			<ul>					
-				<li><a href="#new-arrival">Новые коллекции</a></li>
-				<li><a href="#discounts">Скидки</a></li>
-				<li><a href="">Как купить</a></li>
-				<li><a href="#contacts">Контакты</a></li>
+		<button class="button search header__search"></button>
+		<div class="phone header__phone">
+			<div class="phone__icon"></div>
+			<div class="phone__number">8 (390) 229 78 41</div>
+			<a class="phone__link" href="">Заказать звонок</a>
+		</div>
+		<hr class="header__line">
+		<h1 class="header__logo">Persona</h1>
+		<nav class="menu header__menu">
+			<ul class="menu__list">					
+				<li class="menu__item">
+					<a class="menu__link" href="#new-arrival">Каталог</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#discounts">Скидки</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="">Как купить</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#contacts">Контакты</a>
+				</li>
 			</ul>
 		</nav>
 		<div class="user">
-			<div class="icon icon-user"></div>
-			<a class="login" href="">Войти</a>
+			<div class="user__icon"></div>
+			<a class="user__login" href="">Войти</a>
 		</div>
 		<div class="cart">
 			<div class="shopping-cart">
-				<div class="icon-cart"></div>
-				<div class="ellipse"></div>
-				<div class="icon icon-col">1</div>
+				<div class="shopping-cart__icon">
+					<div class="shopping-cart__ellipse">
+						<div class="shopping-cart__num">1</div>
+					</div>
+				</div>
 			</div>
-			<a class="sum" href="">1800 ₽</a>
+			<a class="cart__amount" href="">1800 ₽</a>
 		</div>
 	</header>
 	<div class="container">
 		<div class="main-screen">
-			<h1>Стиль и элегантность<br>вместе с Persona</h1>
-			<p>Лучшие бренды и качество<br>подчеркнут твою индивидуальность</p>
-			<a href="">Смотреть каталог</a>
-			<div class ="main-screen__image1"></div>
-			<div class ="main-screen__image2"></div>
-			<div class ="main-screen__image3"></div>
-			<div class ="main-screen__image4"></div>
+			<h1 class="main-screen__head">Стиль и элегантность вместе с Persona</h1>
+			<p class="main-screen__text">Лучшие бренды и качество подчеркнут твою индивидуальность</p>
+			<div class="main-screen__image1"></div>
+			<div class="main-screen__image2"></div>
+			<div class="main-screen__image3"></div>
+			<div class="main-screen__image4"></div>
+			<a class="button button_black main-screen__button" href="">
+				<span class="button__text">Смотреть каталог</span>
+			</a>
 		</div>
 		<div class="features">
-			<a class="gift-certificates" href="">
-				<div class="feature_1"></div>
-				<p>Подарочные сертификаты</p>
+			<a class="features__block" href="">
+				<img class="features__image" src="image/gift.png">
+				<p class="features__text">Подарочные сертификаты</p>
 			</a>
-			<a class="all-certificated" href="">
-				<div class="feature_2"></div>
-				<p>Весь товар сертифицирован</p>
+			<a class="features__block" href="">
+				<img class="features__image" src="image/cert.png">
+				<p class="features__text">Весь товар сертифицирован</p>
 			</a>
-			<a class="exchange" href="">
-				<div class="feature_3"></div>
-				<p>30 дней на обмен и возврат</p>
+			<a class="features__block" href="">
+				<img class="features__image" src="image/exchange.png">
+				<p class="features__text">30 дней на обмен и возврат</p>
 			</a>
-			<a class="delivery" href="">
-				<div class="feature_4"></div>
-				<p>Удобная и быстрая доставка</p>
+			<a class="features__block" href="">
+				<img class="features__image" src="image/delivery.png">
+				<p class="features__text">Удобная и быстрая доставка</p>
 			</a>
 		</div>
 		<div class="popular">
-			<h1>Популярные категории</h1>
-			<div class="popular-bags">
-				<div class="image-bags"></div>
-				<a class="popular-btn btn-bags" href="">Сумки</a>
-				<div class="overlay overlay-bags"></div>
+			<h1 class="popular__head">Популярные категории</h1>
+			<div class="popular__block popular__block_bags">
+				<img src="image/pop_bag.png" class="popular__image">
+				<a class="button button_white popular__button" href="">
+					<span class="button__text_black">Сумки</span>
+				</a>
+				<div class="popular__overlay"></div>
 			</div>
-			<div class="popular-dresses">
-				<div class="image-dresses"></div>
-				<a class="popular-btn btn-dresses" href="">Платья</a>
-				<div class="overlay overlay-dresses"></div>
+			<div class="popular__block popular__block_dresses">
+				<img src="image/pop_dress.png" class="popular__image">
+				<a class="button button_white popular__button" href="">
+					<span class="button__text_black">Платья</span>
+				</a>
+				<div class="popular__overlay"></div>
 			</div>
-			<div class="popular-outewear">
-				<div class="image-outewear"></div>
-				<a class="popular-btn btn-outewear" href="">Верхняя одежда</a>
-				<div class="overlay overlay-outewear"></div>
+			<div class="popular__block popular__block_outewear">
+				<img src="image/pop_outewear.png" class="popular__image">
+				<a class="button button_white popular__button popular__button_small" href="">
+					<span class="button__text_black">Верхняя одежда</span>
+				</a>
+				<div class="popular__overlay"></div>
 			</div>
-			<div class="popular-trousers">
-				<div class="image-trousers"></div>
-				<a class="popular-btn btn-trousers" href="">Брюки</a>
-				<div class="overlay overlay-trousers"></div>
+			<div class="popular__block popular__block_trousers">
+				<img src="image/pop_trousers.png" class="popular__image">
+				<a class="button button_white popular__button popular__button_small" href="">
+					<span class="button__text_black">Брюки</span>
+				</a>
+				<div class="popular__overlay"></div>
 			</div>
-			<div class="popular-footwear">
-				<div class="image-footwear"></div>
-				<a class="popular-btn btn-footwear" href="">Обувь</a>
-				<div class="overlay overlay-footwear"></div>
+			<div class="popular__block popular__block_footwear">
+				<img src="image/pop_footwear.png" class="popular__image_footwear">
+				<a class="button button_white popular__button" href="">
+					<span class="button__text_black">Обувь</span>
+				</a>
+				<div class="popular__overlay"></div>
 			</div>
 		</div>
 		<div class="brand">
 			<div class="carousel">
-				<button class="carousel-button-left">
-					<div class="ellipse">
-						<div class="arrow-left"></div>
-					</div>
+				<button class="button button__ellipse carousel__button_left">
+					<div class="button__arrow_left"></div>
 				</button> 
-				<button class="carousel-button-right">
-					<div class="ellipse"></div>
-					<div class="arrow-right"></div>
+				<button class="button button__ellipse carousel__button_right">
+					<div class="button__arrow_right"></div>
 				</button> 
-				<div class="carousel-wrapper"> 
-					<div class="carousel-items">
-						<div class="carousel-block">
-							<a class="brand__image" href=""><img src="image/lerros.png"></a>
+				<div class="carousel__wrapper"> 
+					<div class="carousel__items">
+						<div class="carousel__block">
+							<a class="brand__image" href="">
+								<img src="image/lerros.png">
+							</a>
 						</div>
-						<div class="carousel-block">
-							<a class="brand__image" href=""><img src="image/via.png"></a>
+						<div class="carousel__block">
+							<a class="brand__image" href="">
+								<img src="image/via.png">
+							</a>
 						</div>
-						<div class="carousel-block">
-							<a class="brand__image" href=""><img src="image/zerres.png"></a>
+						<div class="carousel__block">
+							<a class="brand__image" href="">
+								<img src="image/zerres.png">
+							</a>
 						</div>
-						<div class="carousel-block">
-							<a class="brand__image" href=""><img src="image/barbara.png"></a>
+						<div class="carousel__block">
+							<a class="brand__image" href="">
+								<img src="image/barbara.png">
+							</a>
 						</div>
-						<div class="carousel-block">
-							<a class="brand__image" href=""><img src="image/weekend.png"></a>
+						<div class="carousel__block">
+							<a class="brand__image" href="">
+								<img src="image/weekend.png">
+							</a>
 						</div>
-						<div class="carousel-block">
-							<a class="brand__image" href=""><img src="image/maxmara.png"></a>
+						<div class="carousel__block">
+							<a class="brand__image" href="">
+								<img src="image/maxmara.png">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -136,537 +172,513 @@
 		</div>
 		<div class="new-arrival">
 		<a name="new-arrival"></a>
-			<h1>Новинки</h1>
+			<h1 class="new-arrival__head">Новинки</h1>
 			<div class="product__items">
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new1.png"></a>
+					<a href="" class="product__image-block">
+						<img src="image/new1.png" class="product__image">
+					</a>
+					<p class="product__name">Платье</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">3925 ₽</div>
+						<div class="product__old-price"><span class="product__old-price_line-through">2550</span> ₽</div>
 					</div>
-					<p>Платье</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">3925 ₽</div>
-						<div class="old-price__price"><span>2550</span> ₽</div>
+					<div class="saving">
+						<p class="saving__text">Экономия</p>
+						<div class="saving__amount">3000 руб.</div>
 					</div>
-					<div class="old-price">
-						<div class="saving">
-							<p>Экономия</p>
-							<div class="saving__block">3000 руб.</div>
-						</div>
-					</div>	
 				</div>
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new2.png"></a>
-					</div>
-					<p>Платье</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">1590 ₽</div>
+					<a href="" class="product__image-block">
+						<img src="image/new2.png" class="product__image">
+					</a>
+					<p class="product__name">Платье</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">1590 ₽</div>
 					</div>
 					<div class="preview">
-						<div class="preview-block">
+						<div class="preview__block">
 							<div class="product__block">
-								<div class="product__image">
-									<a href=""><img src="image/new2.png"></a>
+								<a href="" class="product__image-block">
+									<img src="image/new2.png" class="product__image_preview">
+								</a>
+								<p class="product__name">Платье</p>
+								<img src="image/marccain.png" class="product__logo">
+								<div class="product__price-block">
+									<div class="product__price">1590 ₽</div>
 								</div>
-								<p>Платье</p>
-								<div class="logo"><img src="image/marccain.png"></div>
-								<div class="price-block">
-									<div class="price">1590 ₽</div>
-								</div>
 							</div>
 						</div>
-						<button class="like"></button>
-						<button class="compare"></button>
-						<button class="quick-view">Быстрый просмотр</button>
-						<div class="size">
-							<p>Размер</p>
-							<div class="size-buttons">
-								<button class="size-button"><span class="size-text">XS</span></button>
-								<button class="size-button"><span class="size-text">S</span></button>
-								<button class="size-button"><span class="size-text">M</span></button>
-								<button class="size-button"><span class="size-text">L</span></button>
+						<button class="button like preview__button-like"></button>
+						<button class="button compare preview__button-compare"></button>
+						<button class="button preview__button-quick-view">Быстрый просмотр</button>
+						<div class="preview__size-block">
+							<p class="preview__text">Размер</p>
+							<div class="preview__size">
+								<button class="preview__size-button"><span class="preview__size-text">XS</span></button>
+								<button class="preview__size-button"><span class="preview__size-text">S</span></button>
+								<button class="preview__size-button"><span class="preview__size-text">M</span></button>
+								<button class="preview__size-button"><span class="preview__size-text">L</span></button>
 							</div>
 						</div>
-						<div class="color">
-							<p>Цвет</p>
-							<div class="color-buttons">
-								<button class="color-button" style="background: #2D82D0;"></button>
-								<button class="color-button" style="background: #666666;"></button>
-								<button class="color-button" style="background: #2DC6D0;"></button>
-								<button class="color-button" style="background: #FFFFFF; border: 1px solid #C2C2C2; box-sizing: border-box;"></button>
+						<div class="preview__color-block">
+							<p class="preview__text">Цвет</p>
+							<div class="preview__color">
+								<button class="preview__color-button" style="background: #2D82D0;"></button>
+								<button class="preview__color-button" style="background: #666666;"></button>
+								<button class="preview__color-button" style="background: #2DC6D0;"></button>
+								<button class="preview__color-button" style="background: #FFFFFF; border: 1px solid #C2C2C2; box-sizing: border-box;"></button>
 							</div>
 						</div>
-						<div class="quantity">
-							<button class="minus"></button>
-							<input type="text" value="1" id="num-quantity">
-							<button class="plus"></button>
+						<div class="quantity preview__quantity">
+							<button class="button quantity__minus"></button>
+							<input type="text" value="1" class="quantity__value">
+							<button class="button quantity__plus"></button>
 						</div>
-						<button class="add-to-cart">В корзину</button>
+						<button class="button button_black_small">
+							<span class="button_black_small-text">В корзину</span>
+						</button>
 					</div>
 				</div>
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new3.png"></a>
-					</div>
-					<p>Блузка</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">1099 ₽</div>
+					<a href="" class="product__image-block">
+						<img src="image/new3.png" class="product__image">
+					</a>
+					<p class="product__name">Блузка</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">1099 ₽</div>
 					</div>
 				</div>	
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new4.png"></a>
-					</div>
-					<p>Блузка</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">2899 ₽</div>
+					<a href="" class="product__image-block">
+						<img src="image/new4.png" class="product__image">
+					</a>
+					<p class="product__name">Блузка</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">2899 ₽</div>
 					</div>
 				</div>
 				<div class="product__block">	
-					<div class="product__image">
-						<a href=""><img src="image/new5.png"></a>
+					<a href="" class="product__image-block">
+						<img src="image/new5.png" class="product__image">
+					</a>
+					<p class="product__name">Рубашка с длинным рукавом Olymp</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">9325 ₽</div>
+						<div class="product__old-price"><span class="product__old-price_line-through">2550</span> ₽</div>
 					</div>
-					<p>Рубашка с длинным рукавом Olymp</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">9325 ₽</div>
-						<div class="old-price__price"><span>2550</span> ₽</div>
-					</div>
-					<div class="label-sale">-50%</div>		
+					<div class="product__label-sale">-50%</div>		
 				</div>
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new6.png"></a>
-					</div>
-					<p>Рубашка стретч зауженного покроя</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">1590 ₽</div>
-					</div>
-				</div>
-				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new7.png"></a>
-					</div>
-					<p>Рубашка Regular Fit</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">1099 ₽</div>
+					<a href="" class="product__image-block">
+						<img src="image/new6.png" class="product__image">
+					</a>
+					<p class="product__name">Рубашка стретч зауженного покроя</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">1590 ₽</div>
 					</div>
 				</div>
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new8.png"></a>
+					<a href="" class="product__image-block">
+						<img src="image/new7.png" class="product__image">
+					</a>
+					<p class="product__name">Рубашка Regular Fit</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">1099 ₽</div>
 					</div>
-					<p>Блейзер Regular Fit</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">2899 ₽</div>
+				</div>
+				<div class="product__block">
+					<a href="" class="product__image-block">
+						<img src="image/new8.png" class="product__image">
+					</a>
+					<p class="product__name">Блейзер Regular Fit</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">2899 ₽</div>
 					</div>
 				</div>
 			</div>
-			<a class="see-more" href="">Смотреть ещё</a>
+			<a class="button button_black new-arrival__button" href="">
+				<span class="button__text">Смотреть ещё</span>
+			</a>
 		</div>
 		<div class="banner">
-			<div class="carousel-banner">
-			<div class="carousel-wrapper"> 
-				<div class="carousel-items">
-					<div class="carousel-block">
-						<div class="block1">
-							<h1>Новая коллекция</h1>
-							<p>Стильные новинки весны 2018</p>
-							<a class="banner__btn" href=""><span>Смотреть</span></a>
-						</div>
+			<div class="carousel_banner">
+				<div class="carousel__items_banner">
+					<div class="carousel__block_banner">
+						<img src="image/banner1.png" class="carousel__image_banner"/>
+						<h1 class="banner__head">Новая коллекция</h1>
+						<p class="banner__text">Стильные новинки весны 2018</p>
+						<a class="button banner__button" href=""><span class="banner__button-text">Смотреть</span></a>
 					</div>	
-					<div class="carousel-block">
-						<div class="block2">
-							<h1>Новая коллекция</h1>
-							<p>Стильные новинки весны 2018</p>
-							<a class="banner__btn" href=""><span>Смотреть</span></a>
-						</div>
+					<div class="carousel__block_banner">
+						<img src="image/banner2.png" class="carousel__image_banner"/>
+						<h1 class="banner__head">Новая коллекция</h1>
+						<p class="banner__text">Стильные новинки весны 2018</p>
+						<a class="button banner__button" href=""><span class="banner__button-text">Смотреть</span></a>
 					</div>
 				</div>
-			</div>
 			</div>
 		</div>
 		<div class="discounts">
-		<a name="discounts"></a>
-			<h1>Скидки</h1>
+			<a name="discounts"></a>
+			<h1 class="discounts__head">Скидки</h1>
 			<div class="product__items">
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new1.png"></a>
+					<a href="" class="product__image-block">
+						<img src="image/new1.png" class="product__image">
+					</a>
+					<p class="product__name">Платье</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">3925 ₽</div>
+						<div class="product__old-price"><span class="product__old-price_line-through">2550</span> ₽</div>
 					</div>
-					<p>Платье</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">3925 ₽</div>
-						<div class="old-price__price"><span>2550</span> ₽</div>
+					<div class="saving">
+						<p class="saving__text">Экономия</p>
+						<div class="saving__amount">3000 руб.</div>
 					</div>
-					<div class="old-price">
-						<div class="saving">
-							<p>Экономия</p>
-							<div class="saving__block">3000 руб.</div>
-						</div>
-					</div>	
 				</div>
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new2.png"></a>
-					</div>
-					<p>Платье</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">1590 ₽</div>
+					<a href="" class="product__image-block">
+						<img src="image/new2.png" class="product__image">
+					</a>
+					<p class="product__name">Платье</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">1590 ₽</div>
 					</div>
 					<div class="preview">
-						<div class="preview-block">
+						<div class="preview__block">
 							<div class="product__block">
-								<div class="product__image">
-									<a href=""><img src="image/new2.png"></a>
+								<a href="" class="product__image-block">
+									<img src="image/new2.png" class="product__image_preview">
+								</a>
+								<p class="product__name">Платье</p>
+								<img src="image/marccain.png" class="product__logo">
+								<div class="product__price-block">
+									<div class="product__price">1590 ₽</div>
 								</div>
-								<p>Платье</p>
-								<div class="logo"><img src="image/marccain.png"></div>
-								<div class="price-block">
-									<div class="price">1590 ₽</div>
-								</div>
 							</div>
 						</div>
-						<button class="like"></button>
-						<button class="compare"></button>
-						<button class="quick-view">Быстрый просмотр</button>
-						<div class="size">
-							<p>Размер</p>
-							<div class="size-buttons">
-								<button class="size-button"><span class="size-text">XS</span></button>
-								<button class="size-button"><span class="size-text">S</span></button>
-								<button class="size-button"><span class="size-text">M</span></button>
-								<button class="size-button"><span class="size-text">L</span></button>
+						<button class="button like preview__button-like"></button>
+						<button class="button compare preview__button-compare"></button>
+						<button class="button preview__button-quick-view">Быстрый просмотр</button>
+						<div class="preview__size-block">
+							<p class="preview__text">Размер</p>
+							<div class="preview__size">
+								<button class="preview__size-button"><span class="preview__size-text">XS</span></button>
+								<button class="preview__size-button"><span class="preview__size-text">S</span></button>
+								<button class="preview__size-button"><span class="preview__size-text">M</span></button>
+								<button class="preview__size-button"><span class="preview__size-text">L</span></button>
 							</div>
 						</div>
-						<div class="color">
-							<p>Цвет</p>
-							<div class="color-buttons">
-								<button class="color-button" style="background: #2D82D0;"></button>
-								<button class="color-button" style="background: #666666;"></button>
-								<button class="color-button" style="background: #2DC6D0;"></button>
-								<button class="color-button" style="background: #FFFFFF; border: 1px solid #C2C2C2; box-sizing: border-box;"></button>
+						<div class="preview__color-block">
+							<p class="preview__text">Цвет</p>
+							<div class="preview__color">
+								<button class="preview__color-button" style="background: #2D82D0;"></button>
+								<button class="preview__color-button" style="background: #666666;"></button>
+								<button class="preview__color-button" style="background: #2DC6D0;"></button>
+								<button class="preview__color-button" style="background: #FFFFFF; border: 1px solid #C2C2C2; box-sizing: border-box;"></button>
 							</div>
 						</div>
-						<div class="quantity">
-							<button class="minus"></button>
-							<input type="text" value="1" id="num-quantity">
-							<button class="plus"></button>
+						<div class="quantity preview__quantity">
+							<button class="button quantity__minus"></button>
+							<input type="text" value="1" class="quantity__value">
+							<button class="button quantity__plus"></button>
 						</div>
-						<button class="add-to-cart">В корзину</button>
+						<button class="button button_black_small">
+							<span class="button_black_small-text">В корзину</span>
+						</button>
 					</div>
 				</div>
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new3.png"></a>
-					</div>
-					<p>Блузка</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">1099 ₽</div>
+					<a href="" class="product__image-block">
+						<img src="image/new3.png" class="product__image">
+					</a>
+					<p class="product__name">Блузка</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">1099 ₽</div>
 					</div>
 				</div>	
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new4.png"></a>
-					</div>
-					<p>Блузка</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">2899 ₽</div>
+					<a href="" class="product__image-block">
+						<img src="image/new4.png" class="product__image">
+					</a>
+					<p class="product__name">Блузка</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">2899 ₽</div>
 					</div>
 				</div>
 				<div class="product__block">	
-					<div class="product__image">
-						<a href=""><img src="image/new5.png"></a>
+					<a href="" class="product__image-block">
+						<img src="image/new5.png" class="product__image">
+					</a>
+					<p class="product__name">Рубашка с длинным рукавом Olymp</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">9325 ₽</div>
+						<div class="product__old-price"><span class="product__old-price_line-through">2550</span> ₽</div>
 					</div>
-					<p>Рубашка с длинным рукавом Olymp</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">9325 ₽</div>
-						<div class="old-price__price"><span>2550</span> ₽</div>
-					</div>
-					<div class="label-sale">-50%</div>		
+					<div class="product__label-sale">-50%</div>		
 				</div>
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new6.png"></a>
-					</div>
-					<p>Рубашка стретч зауженного покроя</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">1590 ₽</div>
-					</div>
-				</div>
-				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new7.png"></a>
-					</div>
-					<p>Рубашка Regular Fit</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">1099 ₽</div>
+					<a href="" class="product__image-block">
+						<img src="image/new6.png" class="product__image">
+					</a>
+					<p class="product__name">Рубашка стретч зауженного покроя</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">1590 ₽</div>
 					</div>
 				</div>
 				<div class="product__block">
-					<div class="product__image">
-						<a href=""><img src="image/new8.png"></a>
+					<a href="" class="product__image-block">
+						<img src="image/new7.png" class="product__image">
+					</a>
+					<p class="product__name">Рубашка Regular Fit</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">1099 ₽</div>
 					</div>
-					<p>Блейзер Regular Fit</p>
-					<div class="logo"><img src="image/marccain.png"></div>
-					<div class="price-block">
-						<div class="price">2899 ₽</div>
+				</div>
+				<div class="product__block">
+					<a href="" class="product__image-block">
+						<img src="image/new8.png" class="product__image">
+					</a>
+					<p class="product__name">Блейзер Regular Fit</p>
+					<img src="image/marccain.png" class="product__logo">
+					<div class="product__price-block">
+						<div class="product__price">2899 ₽</div>
 					</div>
 				</div>
 			</div>
-			<a class="see-more" href="">Смотреть ещё</a>
+			<a class="button button_black discounts__button" href="">
+				<span class="button__text">Смотреть ещё</span>
+			</a>
 		</div>
-		
 		<div class="dzen">
 			<img src="image/dzen.png"):/>
 		</div>
 		<div class="reviews">
-			<h1>Отзывы</h1>
-			<div class="reviews-carousel">
-				<button class="carousel-button-left">
-					<div class="ellipse">
-						<div class="arrow-left"></div>
-					</div>
+			<h1 class="reviews__head">Отзывы</h1>
+			<div class="carousel_reviews">
+				<button class="button button__ellipse carousel__button_left reviews__button_left">
+					<div class="button__arrow_left"></div>
 				</button>
-				<button class="carousel-button-right">
-					<div class="ellipse"></div>
-					<div class="arrow-right"></div>
+				<button class="button button__ellipse carousel__button_right reviews__button_right">
+					<div class="button__arrow_right"></div>
 				</button> 
-				<div class="carousel-wrapper"> 
-					<div class="carousel-items">
-						<div class="carousel-block">
-							<img src="image/photo1.png"/>
-							<div class="reviews__name">Александр Передерей</div>
-							<div class="reviews__date">18 декабря 2016</div>
-							<a class="reviews__link" href=""><span>Перейти к отзыву</span></a><hr/>
-							<a class="reviews__link-arrow" href=""></a>
+				<div class="carousel__wrapper_reviews"> 
+					<div class="carousel__items_reviews">
+						<div class="carousel__block_reviews">
+							<img src="image/photo1.png" class="reviews__photo"/>
+							<div class="reviews__info">
+								<div class="reviews__name">Александр Передерей</div>
+								<div class="reviews__date">18 декабря 2016</div>
+								<a class="reviews__link" href="">Перейти к отзыву</a>
+								<a class="reviews__arrow" href="">&rarr;</a>
+							</div>
 							<div class="reviews__text">Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</div>
 						</div>
-						<div class="carousel-block">
-							<img src="image/photo2.png"/>
-							<div class="reviews__name">Лариса Михалкова</div>
-							<div class="reviews__date">18 декабря 2016</div>
-							<a class="reviews__link" href=""><span>Перейти к отзыву</span></a><hr/>
-							<a class="reviews__link-arrow" href=""></a>
+						<div class="carousel__block_reviews">
+							<img src="image/photo2.png" class="reviews__photo"/>
+							<div class="reviews__info">
+								<div class="reviews__name">Лариса Михалкова</div>
+								<div class="reviews__date">18 декабря 2016</div>
+								<a class="reviews__link" href="">Перейти к отзыву</a>
+								<a class="reviews__arrow" href="">&rarr;</a>
+							</div>
 							<div class="reviews__text">Лично меня этот магазин устраивает по всем параметрам: и расположение, и ассортимент, и обслуживание — именно о нём пару слов. Прихожу (как правило это бывает на обеде, время ограничено) говорю, что хочется чего то новенького в гардеробчик, или конкретно, что мне нужно. Девушки чётко и быстро реагируют на мои пожелания, не забывают улыбаться и шутить, вообще коллектив мне нравится, обстановка дружелюбная. Без покупки ещё ни разу не ушел. Качество товара тоже радует.</div>
 						</div>
 					</div>
 				</div>
 				<div class="pagination"></div>
 			</div>
-			<a class="rewiews_add-btn" href=""><span>Оставить отзыв</span></a>
+			<a class="button button_black reviews__button" href="">
+				<span class="button__text">Оставить отзыв</span>
+			</a>
 		</div>
 		<div class="about-company">
-			<h1>О компании</h1>
-			<div class="about-company_image">
-				<img src="image/image_about.png"/>
-				<button class="about-company__left-btn">
-					<div class="left-btn__arrow"></div>
+			<div class="about-company__slider">
+				<img src="image/image_about.png" class="about-company__image"/>
+				<button class="button about-company__button_left">
+					<div class="button__arrow_white_left"></div>
 				</button>
-				<button class="about-company__right-btn">
-					<div class="right-btn__arrow"></div>
+				<button class="button about-company__button_right">
+					<div class="button__arrow_white_right"></div>
 				</button>
 			</div>
-			<p>Donec eget diam sagittis, vehicula purus nec, vulputate eros. Nulla facilisi. Suspendisse egestas bibendum cursus. Cras elementum ligula eget euismod feugiat. Nunc nec eros non diam eleifend tincidunt et a velit. Sed nisl libero, vestibulum vitae turpis id, vulputate ultrices leo. Cras et est eget lectus blandit cursus vehicula at ligula. Etiam auctor, quam ornare iaculis malesuada, tellus sem egestas felis, vitae euismod eros mi eget urna. Sed turpis sem, semper quis ligula vel, consequat hendrerit sapien. Ut pharetra mollis nulla vehicula laoreet. Ut aliquet ultrices turpis, at vehicula lorem blandit in. Donec in urna at arcu consequat imperdiet eget quis leo. Fusce at sapien efficitur, tincidunt odio sit amet, aliquam risus.</p>
-			<a class="about-company__btn" href=""><span>Узнать больше</span></a>
+			<h1 class="about-company__head">О компании</h1>
+			<p class="about-company__text">Donec eget diam sagittis, vehicula purus nec, vulputate eros. Nulla facilisi. Suspendisse egestas bibendum cursus. Cras elementum ligula eget euismod feugiat. Nunc nec eros non diam eleifend tincidunt et a velit. Sed nisl libero, vestibulum vitae turpis id, vulputate ultrices leo. Cras et est eget lectus blandit cursus vehicula at ligula. Etiam auctor, quam ornare iaculis malesuada, tellus sem egestas felis, vitae euismod eros mi eget urna. Sed turpis sem, semper quis ligula vel, consequat hendrerit sapien. Ut pharetra mollis nulla vehicula laoreet. Ut aliquet ultrices turpis, at vehicula lorem blandit in. Donec in urna at arcu consequat imperdiet eget quis leo. Fusce at sapien efficitur, tincidunt odio sit amet, aliquam risus.</p>
+			<a class="button button_black about-company__button" href="">
+				<span class="button__text">Узнать больше</span>
+			</a>
 		</div>
 		<div class="insta">
 			<div class="insta__items">
-				<div class="insta__block block1"></div>
-				<div class="insta__block block2"></div>
-				<div class="insta__block block3"></div>
-				<div class="insta__block block4"></div>
-				<div class="insta__block block5"></div>
-				<div class="insta__block block6"></div>
+				<div class="insta__block insta__block1"></div>
+				<div class="insta__block insta__block2"></div>
+				<div class="insta__block insta__block3"></div>
+				<div class="insta__block insta__block4"></div>
+				<div class="insta__block insta__block5"></div>
+				<div class="insta__block insta__block6"></div>
 			</div>
 			<div class="insta__overlay"></div>
-			<h1>Следуй за нами в соцсети</h1>
+			<h1 class="insta__head">Следуй за нами в соцсети</h1>
 			<div class="insta__social">
 				<a class="insta__social-block" href="">
-					<div class="ellipse"></div>
-					<div class="vk"></div>
+					<div class="insta__ellipse">
+						<div class="insta__vk"></div>
+					</div>
 				</a>
 				<a class="insta__social-block" href="">
-					<div class="ellipse"></div>
-					<div class="fb"></div>
+					<div class="insta__ellipse">
+						<div class="insta__fb"></div>
+					</div>
 				</a>
 				<a class="insta__social-block" href="">
-					<div class="ellipse"></div>
-					<div class="ok"></div>
+					<div class="insta__ellipse">
+						<div class="insta__ok"></div>
+					</div>
 				</a>
 				<a class="insta__social-block" href="">
-					<div class="ellipse"></div>
-					<div class="inst"></div>
+					<div class="insta__ellipse">
+						<div class="insta__inst"></div>
+					</div>
 				</a>
 			</div>
 		</div>
 		<div class="addresses">
 		<a name="contacts"></a>
-			<ul>
-				<li>
+			<ul class="addresses__list">
+				<li class="addresses__item">
 					<p class="addresses__name">Виктор</p>
 					<p class="addresses__phone">8 (390) 229-78-41</p>
-					<p class="addresses__address"><a href="">г. Абакан, ул. Дружбы Народов, 39</a></p>
+					<a href="" class="addresses__address">г. Абакан, ул. Дружбы Народов, 39</a>
 				</li>
-				<li>
+				<li class="addresses__item">
 					<p class="addresses__name">Apriori Prime</p>
 					<p class="addresses__phone">+7 (913) 440-01-10</p>
-					<p class="addresses__address"><a  href="">г. Абакан, ул. Щетинкина 63, ТЦ Палалар</a></p>
+					<a  href="" class="addresses__address">г. Абакан, ул. Щетинкина 63, ТЦ Палалар</a>
 				</li>
-				<li>
+				<li class="addresses__item">
 					<p class="addresses__name">Persona</p>
 					<p class="addresses__phone">8 (390) 229-78-41</p>
-					<p><a class="addresses__address" href="">г. Абакан, пр. Дружбы Народов, 40</a></p>
+					<a href="" class="addresses__address">г. Абакан, пр. Дружбы Народов, 40</a>
 				</li>
-				<li>
+				<li class="addresses__item">
 					<p class="addresses__name">New Men</p>
 					<p class="addresses__phone">8 (3902) 29-78-40</p>
-					<p><a class="addresses__address" href="">г. Абакан, пр. Дружбы Народов, 40</a></p>
+					<a href="" class="addresses__address">г. Абакан, пр. Дружбы Народов, 40</a>
 				</li>
 			</ul>	
 		</div>
 		<a name="map"></a>
 		<div class="map">
-			<img src="image/map.png"/>
+			<img src="image/map.png" class="map__image"/>
 		</div>
 	</div>
-	<footer>
+	<footer class="footer">
 		<div class="subscribe">
-			<div class="subscribe__block"></div>
-			<div class="subscribe__overlay"></div>
-			<h1>Подпишись на новинки и акции</h1>
-			<form action="" method="post">
-				<input type="text" name="user_name" placeholder="Ваше имя" id="user_name-field">
-				<div class="subscribe__image-user"></div>
-				<input type="email" name="email" placeholder="Ваш email" id="email-field">
-				<div class="subscribe__image-mail"></div>
-				<input type="submit" class="submit" value="Подписаться">
-			</form>
+			<div class="subscribe__overlay">
+				<h1 class="subscribe__head">Подпишись на новинки и акции</h1>
+				<form action="" method="post" class="subscribe__form">
+					<div class="subscribe__user-field">
+						<input type="text" name="user_name" placeholder="Ваше имя" class="subscribe__user-name">
+						<div class="subscribe__image-user"></div>
+					</div>
+					<div class="subscribe__email-field">
+						<input type="email" name="email" placeholder="Ваш email" class="subscribe__email">
+						<div class="subscribe__image-mail"></div>
+					</div>
+					<input type="submit" class="button button_black subscribe__submit" value="Подписаться">
+				</form>
+			</div>
 		</div>
 		<div class="viewed-items">
-			<h1>Ранее вы смотрели</h1>
-			<div class="carousel">
-				<button class="carousel-button-left"></button> 
-				<button class="carousel-button-right"></button> 
-				<div class="carousel-wrapper"> 
-					<div class="carousel-items">
-						<div class="carousel-block">
-							<a class="item-block" href="">
-								<div class="viewed-items__image"><img src="image/viewed_item.png"></div>
+			<h1 class="viewed-items__head">Ранее вы смотрели</h1>
+			<div class="carousel_viewed-items">
+				<button class="button button__arrow_left viewed-items__button_left"></button> 
+				<button class="button button__arrow_right viewed-items__button_right"></button>
+				<div class="carousel__wrapper_viewed-items">
+					<div class="carousel__items_viewed-items">
+						<div class="carousel__block_viewed-items">
+							<a class="viewed-items__block" href="">
+								<img src="image/viewed_item.png" class="viewed-items__image"/>
 								<p class="viewed-items__title">Рубашка Regular Fit</p>
 								<p class="viewed-items__price">1099 ₽</p>
 							</a>
 						</div>
-						<div class="carousel-block">
-							<a class="item-block" href="">
-								<div class="viewed-items__image"><img src="image/viewed_item2.png"></div>
+						<div class="carousel__block_viewed-items">
+							<a class="viewed-items__block" href="">
+								<img src="image/viewed_item2.png" class="viewed-items__image"/>
 								<p class="viewed-items__title">Рубашка с длинным рукавом Olymp</p>
 								<p class="viewed-items__price">1099 ₽</p>
 							</a>
 						</div>
-						<div class="carousel-block"></div>
-						<div class="carousel-block"></div>
-						<div class="carousel-block"></div>
+						<div class="carousel__block_viewed-items"></div>
+						<div class="carousel__block_viewed-items"></div>
+						<div class="carousel__block_viewed-items"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="information">
 			<div class="help">
-				<p>Помощь</p>
-				<ul class="help__items">
-					<li><a href="#">Оформление заказа</a></li>
-					<li><a href="#">Доставка товара</a></li>
-					<li><a href="#">Способы оплаты</li>
-					<li><a href="#">Возврат</a></li>
-					<li><a href="#">Публичная оферта</a></li>
+				<p class="help__head">Помощь</p>
+				<ul class="help__list">
+					<li><a class="help__item" href="">Оформление заказа</a></li>
+					<li><a class="help__item" href="">Доставка товара</a></li>
+					<li><a class="help__item" href="">Способы оплаты</li>
+					<li><a class="help__item" href="">Возврат</a></li>
+					<li><a class="help__item" href="">Публичная оферта</a></li>
 				</ul>
 			</div>
 			<div class="sections">
-				<p>Разделы</p>
-				<ul class="sections__items">
-					<li><a href="#">О компании</a></li>  
-					<li><a href="#">Заказ, оплата, доставка</a></li>
-					<li><a href="#">Обратная связь</a></li>
-					<li><a href="#">Конкурс</a></li>
+				<p class="sections__head">Разделы</p>
+				<ul class="sections__list">
+					<li><a class="sections__item" href="">О компании</a></li>  
+					<li><a class="sections__item" href="">Заказ, оплата, доставка</a></li>
+					<li><a class="sections__item" href="">Обратная связь</a></li>
+					<li><a class="sections__item" href="">Конкурс</a></li>
 				</ul>
 			</div>
 			<div class="payment">
-				<p>Способы оплаты</p>
-				<div class="payment__image1"></div>
-				<div class="payment__image2"></div>
-				<div class="payment__image3"></div>
-				<div class="payment__image4"></div>
-				<div class="payment__image5"></div>
-				<div class="payment__image6"></div>
+				<p class="payment__head">Способы оплаты</p>
+				<div class="visa payment__visa"></div>
+				<div class="mastercard payment__mastercard"></div>
+				<div class="qiwi payment__qiwi"></div>
+				<div class="vtb24 payment__vtb24"></div>
+				<div class="webmoney payment__webmoney"></div>
+				<div class="sberbank payment__sberbank"></div>
 			</div>
-			<div class="information__social">
-				<p>Мы в соцсетях</p>
-				<a class="information__social-vk" href="#"></a>
-				<a class="information__social-ok" href="#"></a>
-				<a class="information__social-fb" href="#"></a>
-				<a class="information__social-tw" href="#"></a>
-				<a class="information__social-inst" href="#"></a>
+			<div class="social">
+				<p class="social__head">Мы в соцсетях</p>
+				<a class="social__vk" href=""></a>
+				<a class="social__ok" href=""></a>
+				<a class="social__fb" href=""></a>
+				<a class="social__tw" href=""></a>
+				<a class="social__inst" href=""></a>
 			</div>
 			<div class="information__phone">
-				<img src="image/phone2.png"/>
-				<p>8 (913) 440-01-10</p>
-				<a class="information__phone-call" href="#">Заказать звонок</a>
+				<div class="information__phone-icon"></div>
+				<p class="information__phone-number">8 (913) 440-01-10</p>
+				<a class="information__phone-call" href="">Заказать звонок</a>
 			</div>
 			<div class="INN">ИНН 1901099195</div>
 			<div class="OGRN">ОГРН 1111901001145</div>
-			<div class="address">Абакан, пр. Дружбы Народов 39</div>
+			<div class="information__address">Абакан, пр. Дружбы Народов 39</div>
 		</div>
 	</footer>
 </body>
 </html>
-
-
-<script>
-$(document).ready(function() {
-	$('.minus').click(function () {
-		var $input = $(this).parent().find('input');
-		var count = parseInt($input.val()) - 1;
-		count = count < 1 ? 1 : count;
-		$input.val(count);
-		$input.change();
-		return false;
-	});
-	$('.plus').click(function () {
-		var $input = $(this).parent().find('input');
-		$input.val(parseInt($input.val()) + 1);
-		$input.change();
-		return false;
-	});
-});
-
-$(function(){
-    $(".size-button").click(function() {
-		$(this).addClass("size-button-active");
-		$(this).children().addClass("size-text-active");
-		$(this).siblings().removeClass("size-button-active");
-		$(this).siblings().children().removeClass("size-text-active");
-		}
-    );
-});
-</script>
-
-<script> 
-	$(document).ready(function() {
-		var nice = $(".addresses ul").niceScroll(); 
-	}); 
-</script> 
