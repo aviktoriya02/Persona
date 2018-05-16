@@ -2056,6 +2056,10 @@ body {
 .search {
 	margin-right: 39px;
 }
+	
+.header__line {
+	width: 1024px;
+}
 
 .header__logo {
 	margin: 46px 143px 0px 35px;
